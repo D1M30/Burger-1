@@ -1,0 +1,33 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-tel:before {
+	content: "\e942";
+ }
+ ._icon-mail:before {
+	content: "\ea86";
+ }
+ ._icon-fb:before {
+	content: "\ea90";
+ }
+ ._icon-inst:before {
+	content: "\ea92";
+ }
+ ._icon-tg:before {
+	content: "\ea95";
+ }
+ 
