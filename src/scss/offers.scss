@@ -1,0 +1,18 @@
+.offers {
+    @include adaptiveValue("padding-top", 80, 60);
+    @include adaptiveValue("padding-bottom", 80, 60);
+    // .offers__container
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    // .offers__img
+
+    &__img {
+        img{
+            max-width: 100%;
+        }
+    }
+}
