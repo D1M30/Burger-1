@@ -1,0 +1,93 @@
+.ingridient {
+    @include adaptiveValue("padding-top", 80, 60);
+    @include adaptiveValue("padding-bottom", 80, 60);
+    // .ingridient__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .ingridient__img
+
+    &__img {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        img {
+            max-width: 100%;
+            flex: 1 1 auto;
+        }
+        @media (max-width: rem(1000)) {
+            display: none;
+        }
+    }
+
+    // .ingridient__contant
+
+    &__contant {
+        display: flex;
+        justify-content: space-between;
+        column-gap: rem(30);
+        @media (max-width: rem(1000)) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    // .ingridient__title
+
+    &__title {
+        align-self: center;
+        @include adaptiveValue("font-size", 45, 30);
+        text-transform: uppercase;
+        font-weight: 700;
+        @include adaptiveValue("padding-left", 5, 10);
+        @include adaptiveValue("padding-right", 5, 10);
+        @include adaptiveValue("margin-bottom", 50, 30);
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: rem(70);
+            height: rem(5);
+            top: calc(50% - rem(2.5));
+            left: -40%;
+            background-color: #fff;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: rem(70);
+            height: rem(5);
+            top: calc(50% - rem(2.5));
+            right: -40%;
+            background-color: #fff;
+        }
+    }
+
+    // .ingridient__method
+
+    &__method {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: rem(30);
+        max-width: rem(600);
+    }
+
+    // .ingridient__step
+
+    &__step {
+        @include adaptiveValue("font-size", 30, 25);
+    }
+
+    // .ingridient__text
+
+    &__text {
+        text-align: center;
+        @include adaptiveValue("font-size", 25, 10);
+        font-weight: 400;
+    }
+}
