@@ -1,12 +1,13 @@
 //====================================================================================================
 .header {
 	position: fixed;
-	// background-color: inherit;
+	background-color: inherit;
 	width: 100%;
 	@include adaptiveValue("padding-top", 20, 10);
 	@include adaptiveValue("padding-bottom", 20, 10);
-	min-height: rem(100);
+	height: rem(100);
 	z-index: 50;
+	
 
 	// .header__container
 	&::before {
@@ -27,7 +28,6 @@
 		justify-content: space-between;
 		gap: rem(15);
 		position: relative;
-
 		&::before {
 			content: "";
 			position: absolute;

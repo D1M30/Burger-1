@@ -1,13 +1,183 @@
-<section class="menu">
-   <div class="menu__container">
-      <h2 class="menu__title title">Our menu</h2>
-      <div class="menu__block block-menu">
-         <article class="block-menu__card card">
+<section class="order">
+   <div class="order__container">
+      <h2 class="order__title title">Our menu</h2>
+      <div class="order__filter ">
+         <button type="button" class="order__btn" data-filter="all">All</button>
+         <button type="button" class="order__btn" data-filter=".burger">Burger</button>
+         <button type="button" class="order__btn" data-filter=".sandwich">Sandwich</button>
+         <button type="button" class="order__btn" data-filter=".drink">Drinks</button>
+         <button type="button" class="order__btn" data-filter=".fries">Fries</button>
+      </div>
+      <div class="order__block block-order">
+
+         <!-- --------burger------- -->
+         <article class="block-order__card card mix burger">
             <div class="card__img">
-               <img src="" alt="">
+               <img src="@img/menu/burger/chicken.jpg" alt="Chicken burger">
             </div>
-            <div class="card__content"></div>
+            <div class="card__content">
+               <h3 class="card__title">Burger <br> <span>chicken</span></h3>
+               <div class="card__descript">Lorem, ipsum, dolor, amet, consectetur.</div>
+              
+                  <label class="card__label" for="price">10$</label>
+                  <button type="submit" id="price" class="card__btn">ORDER</button>
+             
+            </div>
          </article>
+
+         <article class="block-order__card card mix burger">
+            <div class="card__img">
+               <img src="@img/menu/burger/black.jpg" alt="Black burger">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">Burger <br> <span>black</span></h3>
+               <div class="card__descript">Lorem, ipsum, dolor, amet, quaerat, consectetur.</div>
+         
+                  <label class="card__label" for="price">14$</label>
+                  <button type="submit" id="price" class="card__btn">ORDER</button>
+         
+            </div>
+         </article>
+
+         <article class="block-order__card card mix burger">
+            <div class="card__img">
+               <img src="@img/menu/burger/double.jpg" alt="Double burger">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">Burger <br> <span>double</span></h3>
+               <div class="card__descript">Lorem, ipsum, 2 dolor, amet, consectetur.</div>
+               <label class="card__label" for="price">17$</label>
+               <button type="submit" id="price" class="card__btn">ORDER</button>
+            </div>
+         </article>
+
+         <article class="block-order__card card mix burger">
+            <div class="card__img">
+               <img src="@img/menu/burger/vegan.jpg" alt="Vegan burger">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">Burger <br> <span>vegan</span></h3>
+               <div class="card__descript">Lorem, ipsum, amet, consectetur.</div>
+               <label class="card__label" for="price">12$</label>
+               <button type="submit" id="price" class="card__btn">ORDER</button>
+            </div>
+         </article>
+         <!-- ---------------------------------- -->
+
+         <!-- --------sandwich------- -->
+         <article class="block-order__card card mix sandwich">
+            <div class="card__img">
+               <img src="@img/menu/sandwich/beef.jpg" alt="Beef sandwich">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">Sandwich <br> <span>beef</span></h3>
+               <div class="card__descript">Ipsum, lorem, amet, dolor, consectetur.</div>
+               <label class="card__label" for="price">9$</label>
+               <button type="submit" id="price" class="card__btn">ORDER</button>
+            </div>
+         </article>
+
+         <article class="block-order__card card mix sandwich">
+            <div class="card__img">
+               <img src="@img/menu/sandwich/chicken.jpg" alt="Chiken sandwich">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">Sandwich <br> <span>chicken</span></h3>
+               <div class="card__descript">Dolor, ipsum, lorem, amet, consectetur.</div>
+               <label class="card__label" for="price">11$</label>
+               <button type="submit" id="price" class="card__btn">ORDER</button>
+            </div>
+         </article>
+
+         <article class="block-order__card card mix sandwich">
+            <div class="card__img">
+               <img src="@img/menu/sandwich/vegan.jpg" alt="Vegan sandwich">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">Sandwich <br> <span>vegan</span></h3>
+               <div class="card__descript">Amet, lorem, ipsum, dolor, consectetur.</div>
+               <label class="card__label" for="price">9$</label>
+               <button type="submit" id="price" class="card__btn">ORDER</button>
+            </div>
+         </article>
+         <!-- ---------------------------------- -->
+
+          <!-- --------drink------- -->
+          <article class="block-order__card card mix drink">
+            <div class="card__img">
+               <img src="@img/menu/drink/lemon.png" alt="Lemon soda">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">Soda <br> <span>lemon</span></h3>
+               <div class="card__descript">Amet, lorem, ipsum.</div>
+               <label class="card__label" for="price">1.50$</label>
+               <button type="submit" id="price" class="card__btn">ORDER</button>
+            </div>
+         </article>
+          <article class="block-order__card card mix drink">
+            <div class="card__img">
+               <img src="@img/menu/drink/cola.png" alt="Cola">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">Soda <br> <span>cola</span></h3>
+               
+                  <div class="card__descript">Consectetur, lorem, ipsum.</div>
+                 
+                     <label class="card__label" for="price">1.50$</label>
+                     <button type="submit" id="price" class="card__btn">ORDER</button>
+                
+              
+            </div>
+         </article>
+          <article class="block-order__card card mix drink">
+            <div class="card__img">
+               <img src="@img/menu/drink/apple.png" alt="Apple soda">
+            </div>
+            <div class="card__content">
+               <h3 class="card__title">Soda <br> <span>apple</span></h3>
+               <div class="card__descript">Amet,lorem, ipsum.</div>
+               <label class="card__label" for="price">1.50$</label>
+               <button type="submit" id="price" class="card__btn">ORDER</button>
+            </div>
+         </article>
+         <!-- ---------------------------------- -->
+
+                   <!-- --------french fries------- -->
+                   <article class="block-order__card card mix fries">
+                     <div class="card__img">
+                        <img src="@img/menu/french/frenchfries.png" alt="french fries small">
+                     </div>
+                     <div class="card__content">
+                        <h3 class="card__title">french fries <br> <span>Small</span></h3>
+                        <div class="card__descript">Amet, ipsum.</div>
+                        <label class="card__label" for="price">2$</label>
+                        <button type="submit" id="price" class="card__btn">ORDER</button>
+                     </div>
+                  </article>
+                   <article class="block-order__card card mix fries">
+                     <div class="card__img">
+                        <img src="@img/menu/french/frenchfries.png" alt="french fries middle">
+                     </div>
+                     <div class="card__content">
+                        <h3 class="card__title">french fries <br> <span>middle</span></h3>
+                        <div class="card__descript">Amet, ipsum.</div>
+                        <label class="card__label" for="price">3$</label>
+                        <button type="submit" id="price" class="card__btn">ORDER</button>
+                     </div>
+                  </article>
+                   <article class="block-order__card card mix fries">
+                     <div class="card__img">
+                        <img src="@img/menu/french/frenchfries.png" alt="french fries big">
+                     </div>
+                     <div class="card__content">
+                        <h3 class="card__title">french fries <br> <span>big</span></h3>
+                        <div class="card__descript">Amet, ipsum.</div>
+                        <label class="card__label" for="price">2$</label>
+                        <button type="submit" id="price" class="card__btn">ORDER</button>
+                     </div>
+                  </article>
+         <!-- ---------------------------------- -->
+
       </div>
    </div>
 </section>

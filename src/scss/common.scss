@@ -1,1 +1,28 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.title {
+   align-self: center;
+    @include adaptiveValue("font-size", 45, 30);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: rem(0) rem(5);
+    @include adaptiveValue("margin-bottom", 50, 30);
+   position: relative;
+    &::before{
+      content: "";
+       position: absolute; 
+       width: rem(70);  
+       height: rem(5); 
+       top: calc(50% - rem(2.5)); 
+       left: -40%;
+       background-color: #fff;
+    }
+    &::after{
+      content: "";
+       position: absolute; 
+       width: rem(70); 
+       height: rem(5); 
+       top: calc(50% - rem(2.5)); 
+       right: -40%;
+       background-color: #fff;
+    }
+}
