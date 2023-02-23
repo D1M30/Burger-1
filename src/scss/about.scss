@@ -1,0 +1,134 @@
+.about {
+    @include adaptiveValue("padding-top", 80, 60);
+   @include adaptiveValue("padding-bottom", 80, 60);
+
+    // .about__container
+
+    &__container {
+        position: relative;
+ 
+      
+        &::before{
+            content:'';
+            background: url(@img/main/decor/Burguer.png) left no-repeat;
+            position: absolute;
+            top: rem(-19);
+            left: 5%;
+            width: 100%;
+            height:rem(100);
+            @media (max-width:rem(900)){
+                  display: none;
+            }
+        }
+        &::after{
+            content:'';
+            background: url(@img/main/decor/Burguer-2.png) left no-repeat;
+            position: absolute;
+            top: rem(-15);
+            left: 80%;
+            width: 100%;
+            height: rem(100);
+            @media (max-width:rem(900)){
+                display: none;
+          }
+        }
+    }
+
+    // .about__img-top
+
+    &__img-top {
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    // .about__contant
+
+    &__contant {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .about__title
+
+    &__title {
+        align-self: center;
+         @include adaptiveValue("font-size", 45, 30);
+         text-transform: uppercase;
+         font-weight: 700;
+         @include adaptiveValue("padding-left", 5, 10);
+         @include adaptiveValue("padding-right", 5, 10);
+         @include adaptiveValue("margin-bottom", 50, 30);
+        position: relative;
+         &::before{
+           content: "";
+            position: absolute; 
+            width: rem(70);  
+            height: rem(5); 
+            top: calc(50% - rem(2.5)); 
+            left: -40%;
+            background-color: #fff;
+         }
+         &::after{
+           content: "";
+            position: absolute; 
+            width: rem(70); 
+            height: rem(5); 
+            top: calc(50% - rem(2.5)); 
+            right: -40%;
+            background-color: #fff;
+         }
+     }
+
+    // .about__text
+
+    &__text {
+        text-align: center;
+         @include adaptiveValue("font-size", 30, 10);
+         font-weight: 400;
+
+    }
+
+    // .about__img-bottom
+
+    &__img-bottom {
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.about {
+
+    // .about__line
+
+    &__line {
+    }
+}
+
+.line {
+    margin: rem(40) rem(0);
+display: flex;
+border: rem(2) solid;
+overflow: hidden;
+@include adaptiveValue("heigh", 400, 200);
+
+// height: rem(400) ;
+    // .line__item
+
+    &__item {
+       
+position: relative;
+
+        left: rem(-420);
+        img{
+             @include adaptiveValue("width", 300, 150);
+            height: 100%;
+        }
+    }
+}

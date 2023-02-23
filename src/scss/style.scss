@@ -151,7 +151,13 @@ body {
 // Підключення стилів окремих блоків
 @import "header";
 @import "main";
+
 @import "menu";
+
+@import "about";
+@import "ingridient";
+@import "offers";
+
 @import "footer";
 
 // Підключення стилів окремих сторінок
